@@ -1,0 +1,161 @@
+@import "_variables";
+@mixin content_block_bg($bg_path: '../../images/section1_bg.jpg'){
+	
+	//background-image: url(../../images/session1_bg.jpg);
+	background-image: url($bg_path);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;	
+	background-attachment: fixed;
+	@media (max-width: $screen-sm-max){
+		background-attachment: scroll; 
+	}
+	/* Landscape */
+	@media (min-device-width: $screen-sm-min) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1){
+		//background-size: cover;
+		background-attachment: scroll;
+	}
+	
+}
+@mixin process_model($color: #CCC, $bg_color: #CCC){				
+	width: 100%;
+	margin: 3% auto;
+
+	padding: 0.5% 3%;
+
+	border-style: solid;
+	border-width: thin;
+	border-color: $color;
+
+	background-color: $bg_color;
+
+	h4, p{
+		color: $color;
+	}
+	.btn-primary{
+		background-color: $color;
+    	border-color: darken($color, 6.5%);
+	}
+	.btn-primary:hover{
+		background-color: darken($color, 6.5%);
+	}
+	@media (min-width: $customized_large){
+		width: 70%;
+		//background-color: red;
+	}
+}
+%content_block{
+	height: auto;
+	min-height: 40vh;
+	
+	padding: 3% 20%;
+
+	background-color: white;
+	text-align: center;
+	@media (max-width: $customized_large) and (min-width: $screen-sm-min){
+		padding: 3% 12%;
+	}
+	@media (max-width: $screen-sm-max){
+		padding: 2% 8%;
+		min-height: 30vh;
+
+		$tempP: 100vw;
+        min-height: calc(#{$tempP*0.3}); 
+	}
+	/* Landscape */
+	@media (min-device-width: $screen-sm-min) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1){
+		$tempP: 100vw;
+        min-height: calc(#{$tempP*0.35}); 
+	}
+}
+%tag_model{
+	color: white;
+	float: left;
+	margin: 0.5% 1%;
+	padding: 0.5% 1%;
+	float: left;
+	@media (max-width: $screen-xs-max){
+		margin-top: 20px;
+		font-size: $font-size-small;
+		display: none;
+	}
+}
+%section_normal{
+	padding-top: 10% !important;
+	padding-bottom: 8% !important;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+	@media screen and (max-width: $customized_large - 1) and (min-width: $customized_large2) {
+        padding-left: 12% !important;
+        padding-right: 12% !important;
+        //background-color: yellow !important;
+    } 
+    @media screen and (max-width: $customized_large2 - 1) and (min-width: $screen-sm-min) {
+        padding-left: 12% !important;
+        padding-right: 12% !important;
+        padding-top: 12% !important;
+        //background-color: red !important;
+    }
+	@media (max-width: $screen-sm-max) and (min-width: $screen-xs-min){
+		padding-top: 15% !important;		
+		background-position: right top !important;
+		background-size: 150% !important;
+	}
+	@media (max-width: $screen-xs-max){
+		padding-top: 25% !important;
+		padding-left: 2% !important;
+		padding-right: 2% !important;
+		background-position: right 1% !important;
+		background-size: 150% !important;
+	}
+	h1{
+		color: $brand-primary;
+		margin-bottom: 2%;
+	}
+}
+%prize_model{
+    width: 98%;
+    height: 70vh;
+    margin: 0 auto 0 auto;
+    margin-bottom: 5%;
+
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    //background-color: yellow;
+
+	@media screen and (max-width: $customized_large - 1) and (min-width: $customized_large2)  {
+        //height: 75vh;
+        //background-color: black;
+    }
+    @media screen and (max-width: $customized_large2 - 1) and (min-width: $screen-sm-min)  {
+        height: 70vh;
+        //background-color: purple;
+    }
+    @media screen and (max-width: $screen-sm-max) and (min-width: $screen-xs-min) {
+        height: 45vh;
+        //background-color: red;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+        background-image: url(../../images/prizes_m.jpg);
+		width: 90%;
+        $tempP: 100vw;
+        height: calc(#{$tempP*1.6}); 
+        //background-color: green;
+    }
+    /*device width*/
+    @media screen and (max-device-width: $screen-sm-max) and (min-device-width: $screen-xs-min) {
+       $tempP: 100vw;
+       height: calc(#{$tempP*0.45}); 
+       //background-color: yellow;
+    }
+    @media screen and (max-device-width: $screen-xs-max) {
+        background-image: url(../../images/prizes_m.jpg);
+		width: 90%;
+        $tempP: 100vw;
+        height: calc(#{$tempP*1.6}); 
+        //background-color: red;
+    }
+}
