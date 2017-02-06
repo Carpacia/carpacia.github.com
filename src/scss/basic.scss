@@ -1,0 +1,59 @@
+@import "_variables";
+
+img{
+	border: 0;
+	outline: none;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('images/DSC06889.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.block{
+	display: inline-block;
+}
+.clearboth{
+	clear: both;
+}
+#wrapper{
+}
+#top{
+	height: 700px;
+	background-color: #CCC;
+}
+#content{
+	height: auto;
+	min-height: 50vh;
+}
+footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	padding: 2% 20% 2% 20%;
+	//min-height: 200px;
+	//height: 50px;
+	//line-height: 50px;
+	background-color: black;
+	text-align: left;
+	color: #9a9a9a;
+	@media (max-width: $customized_large) and (min-width: $screen-sm-min){
+		padding: 2% 10% 2% 10%;
+	}
+	@media (max-width: $screen-sm-max) and (min-width: $screen-xs-min){
+		padding: 2% 5%;
+		min-height: 0;
+	}
+	@media (max-width: $screen-xs-max){
+		padding: 2% 5%;
+		min-height: 0;
+		font-size: $font-size-small;
+	}
+}
+section{
+	@extend .col-md-12;
+	padding-top: 5%;
+}
