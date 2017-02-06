@@ -58,8 +58,15 @@ gulp.task('browser-sync', function() {
     });
 });
 
+
+gulp.task('copyFile', function() {
+    gulp.src('node_modules/jquery/dist/jquery.min.js').pipe(gulp.dest('js'));
+    gulp.src('node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js').pipe(gulp.dest('js'));
+    gulp.src('node_modules/w3-css/w3.css').pipe(gulp.dest('dist/css'));
+});
+
 // default task
-gulp.task('default', ['sass', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'copyFile', 'browser-sync'], function () {
      gulp.watch(scss.watch, ['sass']);
 });
 
