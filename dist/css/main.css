@@ -5818,6 +5818,9 @@ img {
   border: 0;
   outline: none; }
 
+#basicInfo {
+  font-family: "微軟正黑體", "Microsoft JhengHei"; }
+
 body, h1 {
   font-family: "Raleway", sans-serif; }
 
@@ -5825,10 +5828,25 @@ body, html {
   height: 100%; }
 
 .bgimg {
-  background-image: url("images/DSC06889.jpg");
+  background-image: url("../../images/DSC06889.jpg");
   min-height: 100%;
   background-position: center;
   background-size: cover; }
+
+#middle_bar {
+  background: #000000;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #000000, #202020);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #000000, #202020);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #000000, #202020);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #000000, #202020);
+  /* Standard syntax */
+  width: 100%;
+  min-height: 30vh;
+  transform-origin: right bottom; }
 
 .block {
   display: inline-block; }
@@ -5837,7 +5855,7 @@ body, html {
   clear: both; }
 
 #top {
-  height: 700px;
+  height: 100vh;
   background-color: #CCC; }
 
 #content {
@@ -5854,7 +5872,8 @@ footer {
   color: #9a9a9a; }
   @media (max-width: 1600px) and (min-width: 768px) {
     footer {
-      padding: 2% 10% 2% 10%; } }
+      padding: 2% 10% 2% 10%;
+      min-height: 0; } }
   @media (max-width: 991px) and (min-width: 480px) {
     footer {
       padding: 2% 5%;
@@ -5866,4 +5885,4 @@ footer {
       font-size: 12px; } }
 
 section {
-  padding-top: 5%; }
+  margin-top: 5%; }

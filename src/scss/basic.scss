@@ -5,14 +5,39 @@ img{
 	outline: none;
 }
 
-body,h1 {font-family: "Raleway", sans-serif}
+#basicInfo {font-family: "微軟正黑體", "Microsoft JhengHei"}
+body, h1 {font-family:  "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background-image: url('images/DSC06889.jpg');
+    background-image: url('../../images/DSC06889.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
 }
+
+#middle_bar {
+  background: #000000;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #000000, #202020);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #000000, #202020);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #000000, #202020);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #000000, #202020);
+  /* Standard syntax */
+  width: 100%;
+  min-height: 30vh;
+  // margin-left: -10%;
+  transform-origin: right bottom;
+  // transform: rotate(-10deg); 
+	}
+ //  @media (max-width: 768px) {
+ //    #middle_bar {
+ //      width: 140%;
+ //      min-height: 40vh;
+ //      margin-left: -10%; } }
+
 .block{
 	display: inline-block;
 }
@@ -22,7 +47,7 @@ body, html {height: 100%}
 #wrapper{
 }
 #top{
-	height: 700px;
+	height: 100vh;
 	background-color: #CCC;
 }
 #content{
@@ -42,6 +67,7 @@ footer{
 	color: #9a9a9a;
 	@media (max-width: $customized_large) and (min-width: $screen-sm-min){
 		padding: 2% 10% 2% 10%;
+		min-height: 0;
 	}
 	@media (max-width: $screen-sm-max) and (min-width: $screen-xs-min){
 		padding: 2% 5%;
@@ -53,7 +79,9 @@ footer{
 		font-size: $font-size-small;
 	}
 }
+
 section{
 	@extend .col-md-12;
-	padding-top: 5%;
+	// padding-top: 5%;
+	margin-top: 5%;
 }
