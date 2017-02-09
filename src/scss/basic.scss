@@ -16,18 +16,21 @@ body, html {height: 100%}
 }
 
 #middle_bar {
-  background: #000000;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #000000, #202020);
+	margin-top: 5%;
+	background: #000000;
+ 	/* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #000000, #626262);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #000000, #202020);
+  background: -o-linear-gradient(bottom right, #000000, #626262);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #000000, #202020);
+  background: -moz-linear-gradient(bottom right, #000000, #626262);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #000000, #202020);
+  background: linear-gradient(to bottom right, #000000, #626262);
   /* Standard syntax */
   width: 100%;
-  min-height: 30vh;
+  float:left;
+  // height: 500px;
+  min-height: 500px;
   // margin-left: -10%;
   transform-origin: right bottom;
   // transform: rotate(-10deg); 
@@ -82,6 +85,6 @@ footer{
 
 section{
 	@extend .col-md-12;
-	// padding-top: 5%;
-	margin-top: 5%;
+	padding-top: 5%;
+	// margin-top: 5%;
 }
