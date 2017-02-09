@@ -87,78 +87,79 @@
 				<div class="col-md-3"></div>
 			</div>
 			<div class="col-md-12" style="text-align:center">
-				<h2 class="titleh2">我是林彥州</h2>
+				<h1>我是林彥州</h1>
 			</div>
 			<div class="col-md-12 w3-container" style="margin-top: 15px">
 				<div class="col-xs-12">
-					<div class="col-xs-6 w3-border-right">
-						<div class=" w3-border-black w3-right-align" style="font-size:16px;">
-							<h3>個人</h3>
+					<div class="col-xs-6 w3-border-right w3-border-black">
+						<div id="personal" class="w3-right-align" style="font-size:20px;">
+							<h2>個人</h2>
 							男性<br>
 							1989年生<br>
-							處女座 O型<br>
+							處女座<br>
+							O型<br>
 							新竹人<br>
-							役畢<br><br><br>
+							役畢<br>
+							<br>
 						</div>
 					</div>
-					<div class="col-xs-6 w3-border-left">
+					<div id="personalSide" class="col-xs-6 w3-border-left w3-border-black">
 						<br>
 						<object type="image/svg+xml" data="images/119-user-tie.svg" width="54px">
 							Your browser does not support SVG
 						</object>
-						<br><br><br><br><br><br><br><br>
 					</div>
 				</div>
 				<div class="col-xs-12">
-					<div class="col-xs-6 w3-border-right w3-right-align	">
+					<div id="experienceSide" class="col-xs-6 w3-border-right w3-right-align w3-border-black">
 						<br>
 						<object type="image/svg+xml" data="images/159-trophy.svg" width="54px">
 							Your browser does not support SVG
 						</object>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</div>
-					<div class="col-xs-6 w3-border-left">
-						<div class="w3-container w3-border-black" style="font-size:16px;">
-							<h3>經歷</h3>
+					<div id="experience" class="col-xs-6 w3-border-left w3-border-black">
+						<div class="w3-container" style="font-size:20px;">
+							<h2>經歷</h2>
 							長庚大學資訊工程系<br> <h6>2008/09~2012/06</h6><br>
 							中山大學資訊工程所<br> <h6>2012/09~2014/06</h6><br>
 							<br>
 							居易科技研發工程師<br> <h6>2015/09~2016/11</h6><br>
+							<br>
 						</div>
 					</div>
 				</div>
 				<div class="col-xs-12">
-					<div class="col-xs-6 w3-border-right">
-						<div class=" w3-border-black w3-right-align" style="font-size:16px;">
-							<h3>程式技能</h3>
-							C、C++、C#、HTML、PHP、MATLAB<br>
-							、JavaScript、jQuery<br>
-							<h3>前端相關</h3>
-							NodeJS、Gulp、Git、D3、BootstrapJS、w3<br>
+					<div id="skill" class="col-xs-6 w3-border-right w3-border-black">
+						<div class="w3-right-align" style="font-size:20px;">
+							<h2>程式技能</h2>
+							C、C++、C#、HTML、PHP、MATLAB、<br>
+							JavaScript、jQuery<br>
+							<h2>前端相關</h2>
+							NodeJS、Gulp、bower、Git、D3、BootstrapJS<br>
+							<br>
 						</div>
 					</div>
-					<div class="col-xs-6 w3-border-left">
+					<div id="skillSide" class="col-xs-6 w3-border-left w3-border-black">
 						<br>
 						<object type="image/svg+xml" data="images/146-wrench.svg" width="54px">
 							Your browser does not support SVG
 						</object>
-						<br><br><br><br><br><br><br><br>
 					</div>
 				</div>
 				<div class="col-xs-12">
-					<div class="col-xs-6 w3-border-right w3-right-align	">
+					<div id="groupSide" class="col-xs-6 w3-border-right w3-right-align w3-border-black">
 						<br>
 						<object type="image/svg+xml" data="images/179-accessibility.svg" width="54px">
 							Your browser does not support SVG
 						</object>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</div>
-					<div class="col-xs-6 w3-border-left">
-						<div class="w3-container w3-border-black" style="font-size:16px;">
-							<h3>社團</h3>
+					<div id="group" class="col-xs-6 w3-border-left w3-border-black">
+						<div class="w3-container" style="font-size:20px;">
+							<h2>社團</h2>
 							系學會活動組<br>
 							竹友會<br>
 							熱音社<br>
+							<br>
 						</div>
 					</div>
 				</div>
@@ -225,5 +226,8 @@
 </body>
 </html>
 <script type="text/javascript">
-	
+	$("#personalSide").height($("#personal").height() + 20);
+	$("#experienceSide").height($("#experience").height());
+	$("#skillSide").height($("#skill").height());
+	$("#groupSide").height($("#group").height());
 </script>

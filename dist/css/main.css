@@ -5818,11 +5818,8 @@ img {
   border: 0;
   outline: none; }
 
-#basicInfo {
-  font-family: "微軟正黑體", "Microsoft JhengHei"; }
-
 body, h1 {
-  font-family: "Raleway", sans-serif; }
+  font-family: "微軟正黑體", "Microsoft JhengHei","Raleway", sans-serif; }
 
 body, html {
   height: 100%; }
@@ -5846,7 +5843,6 @@ body, html {
   background: linear-gradient(to bottom right, #000000, #626262);
   /* Standard syntax */
   width: 100%;
-  float: left;
   min-height: 500px;
   transform-origin: right bottom; }
 

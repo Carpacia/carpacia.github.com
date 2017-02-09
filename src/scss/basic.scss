@@ -5,8 +5,8 @@ img{
 	outline: none;
 }
 
-#basicInfo {font-family: "微軟正黑體", "Microsoft JhengHei"}
-body, h1 {font-family:  "Raleway", sans-serif}
+body, h1 {font-family:  "微軟正黑體", "Microsoft JhengHei","Raleway", sans-serif}
+// #basicInfo {font-family: }
 body, html {height: 100%}
 .bgimg {
     background-image: url('../../images/DSC06889.jpg');
@@ -28,7 +28,6 @@ body, html {height: 100%}
   background: linear-gradient(to bottom right, #000000, #626262);
   /* Standard syntax */
   width: 100%;
-  float:left;
   // height: 500px;
   min-height: 500px;
   // margin-left: -10%;
