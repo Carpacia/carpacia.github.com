@@ -1538,7 +1538,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, section, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1807,7 +1807,7 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, section {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -1831,7 +1831,7 @@ pre {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12, section {
+  .col-md-12 {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -5826,6 +5826,8 @@ body, html {
 
 .bgimg {
   background-image: url("../../images/DSC06889.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100%;
   background-position: center;
   background-size: cover; }
@@ -5834,17 +5836,27 @@ body, html {
   margin-top: 5%;
   background: #000000;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #000000, #626262);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #000000, #626262);
+  background: -webkit-linear-gradient(bottom right, #000000, #626262);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #000000, #626262);
+  background: -o-linear-gradient(bottom right, #000000, #626262);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #000000, #626262);
+  background: linear-gradient(to top left, #000000, #626262);
   /* Standard syntax */
   width: 100%;
-  min-height: 500px;
+  min-height: 200;
   transform-origin: right bottom; }
+
+.collections_background {
+  margin-top: 5%;
+  background: #404040; }
+  .collections_background.left {
+    left: 15px; }
+  .collections_background.right {
+    right: 15px; }
+
+#collections h1 {
+  font-size: 70px; }
 
 .block {
   display: inline-block; }
@@ -5884,3 +5896,14 @@ footer {
 
 section {
   padding-top: 5%; }
+
+#middle_pic {
+  min-height: 100%;
+  padding-top: 0;
+  background-image: url(../../images/DSC06889.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white; }

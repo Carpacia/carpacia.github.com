@@ -10,6 +10,8 @@ body, h1 {font-family:  "微軟正黑體", "Microsoft JhengHei","Raleway", sans-
 body, html {height: 100%}
 .bgimg {
     background-image: url('../../images/DSC06889.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -19,26 +21,37 @@ body, html {height: 100%}
 	margin-top: 5%;
 	background: #000000;
  	/* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #000000, #626262);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #000000, #626262);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #000000, #626262);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #000000, #626262);
-  /* Standard syntax */
-  width: 100%;
-  // height: 500px;
-  min-height: 500px;
-  // margin-left: -10%;
-  transform-origin: right bottom;
-  // transform: rotate(-10deg); 
+	/* For Safari 5.1 to 6.0 */
+	background: -webkit-linear-gradient(bottom right, #000000, #626262);
+	/* For Opera 11.1 to 12.0 */
+	background: -o-linear-gradient(bottom right, #000000, #626262);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top left, #000000, #626262);
+	/* Standard syntax */
+	width: 100%;
+	// height: 500px;
+	min-height: 200;
+	// margin-left: -10%;
+	transform-origin: right bottom;
+	// transform: rotate(-10deg); 
+}
+
+.collections_background{
+	margin-top: 5%;
+	background: #404040;
+	&.left{
+		left: 15px;
 	}
- //  @media (max-width: 768px) {
- //    #middle_bar {
- //      width: 140%;
- //      min-height: 40vh;
- //      margin-left: -10%; } }
+	&.right{
+		right: 15px;
+	}
+}
+
+#collections{
+	h1{
+		font-size: 70px;
+	}
+}
 
 .block{
 	display: inline-block;
@@ -83,7 +96,19 @@ footer{
 }
 
 section{
-	@extend .col-md-12;
+	//@extend .col-md-12;
 	padding-top: 5%;
 	// margin-top: 5%;
+}
+
+#middle_pic {
+    min-height: 100%;
+	padding-top: 0;
+	background-image: url(../../images/DSC06889.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+	color: white;
 }
