@@ -47,9 +47,49 @@ body, html {height: 100%}
 	}
 }
 
+.project_background{
+    background-image: url('../../images/DSC02498_edited_edited.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
 #collections{
 	h1{
+		margin-top: 50px;
 		font-size: 70px;
+	}
+	.projectColumn{
+		padding: 0;
+		margin-bottom: 5px;
+	}
+	.projectBlock{
+		margin-top: 15px;
+	    -moz-transition: all 0.5s ease;
+	    -ms-transition: all 0.5s ease;
+	    -o-transition: all 0.5s ease;
+	    -webkit-transition: all 0.5s ease;
+		div{
+			background: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 5px;
+		}
+		.projectContent{
+			font-size: 16px;
+			display:none;
+		}
+	}
+	.projectDetail{
+		min-height: 0;
+		margin-top: 30px;
+		background-color: white;
+		width: 100%; padding: 0;
+		box-shadow: 0px 16px 16px 0 rgba(0,0,0,0.22) inset,
+		0 25px 55px 0 rgba(0,0,0,0.21) inset,
+		0px -16px 16px 0 rgba(0,0,0,0.22) inset,
+		0 -25px 55px 0 rgba(0,0,0,0.21) inset;
 	}
 }
 
@@ -99,16 +139,4 @@ section{
 	//@extend .col-md-12;
 	padding-top: 5%;
 	// margin-top: 5%;
-}
-
-#middle_pic {
-    min-height: 100%;
-	padding-top: 0;
-	background-image: url(../../images/DSC06889.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	overflow: hidden;
-	color: white;
 }
