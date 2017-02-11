@@ -182,20 +182,43 @@
 		</section>
 		<div class="clearfix"></div>
 		<!-- <section id="middle_pic"></section> -->
-		<section id="collections" class="project_background" style="height: 1000px">
-			<h1 class="w3-center" style="color:white;"><span style="border-style: solid;">專案經驗</span></h1>
-			<div class="col-md-12 projectColumn">
-				<div class="col-md-3 projectBlock">
+		<section id="collections">
+			<h1 class="w3-center"><span>專案經驗</span></h1>
+			<div class="projectColumn">
+				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>居易工作內容(1/3)</h4>
 						<h3>GPON fiber router</h3>
 						C、HTML、JavaScript
 					</div>
+					<div class="projectContent">
+						作業系統：	eCos、DrayOS<br>
+						內容簡介：	在公司原本的Router上增加GPON的光模組，router在GPON溝通中扮演ONT或是ONU的腳色，我們修改OMCI讓ONT與OLT溝通。<br>
+						　　我主要負責開發網頁、CLI的功能及嘗試並解決GPON連線問題，根據使用者需求增加更多功能，例如multicast IP address、VPN等功能。網頁沿用Router本身網頁增加GPON功能，主要是以JavaScript完成，使用CGI及SSI與底層溝通。<br>
+						<div id="carousel-dray1" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-dray1" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/dray1-1.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-dray1" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-dray1" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-3 projectBlock">
+				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>居易工作內容(2/3)</h4>
-						<h3>AP Management</h4>
+						<h3>AP Management</h3>
 						C、C++、HTML、JavaScript、JQuery、AJAX
 					</div>
 					<div class="projectContent">
@@ -204,44 +227,239 @@
 						內容簡介：	    在公司的router上增加管理AP的工具，利用TR-069作為兩者溝通的協定，提供監控、應用、調整及規劃等功能。<br>
 						　　底層主要使用的程式語言是C再加上部分的C++，使用CGI與網頁溝通，網頁再用AJAX post回內部的http server轉回CGI程式接收，再交由程式來處理內容，進而對AP傳送指令或是接收資訊。<br>
 						　　網頁全部RWD，主要使用HTML及使用bootstrap達到responsive效果，內容部分則使用HTML5、D3、jQuery UI、Chart完成想要的視覺效果。<br>
+						<div id="carousel-dray2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-dray2" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-dray2" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/dray2-1.png" alt="...">
+								</div>
+								<div class="item">
+									<img src="images/dray2-2.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-dray2" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-dray2" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-3 projectBlock">
+				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>居易工作內容(3/3)</h4>
 						<h3>Switch</h3>
 						C、C++、HTML、JavaScript、JQuery、AJAX
 					</div>
 					<div class="projectContent">
-						資料結構：	NVRAM<br>
-						作業系統：	uClinux<br>
-						內容簡介：	    與廠商購買turnkey用以開發公司第一台switch。<br>
+						資料結構：NVRAM<br>
+						作業系統：uClinux<br>
+						內容簡介：與廠商購買turnkey用以開發公司第一台switch。<br>
 						　　底層主要使用的程式語言是C，主要在Linux上開發多隻程式或是修改，使用CGI與網頁溝通，網頁再用ajax post回內部的http server轉回CGI程式接收，再交由不同隻程式來處理內容。我主要負責前後端的設計與維護。<br>
 						　　網頁延用前述router設計模式，全部RWD，主要使用HTML及使用bootstrap達到responsive效果，內容部分則使用HTML5、D3、Chart完成想要的視覺效果。<br>
+						<div id="carousel-dray3" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-dray3" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/dray3-1.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-dray3" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-dray3" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <div id="dray3" class="col-md-12 projectDetail" style="">
-				<div style="border-style: solid; width: 54px; height: 54px;">
-					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 100%; height: 100%">
-						<g>
-							<image x="0" y="0" stroke="black" stroke-opacity="0.8" width="100%" height="100%" xlink:href="images/272-cross.svg" />
-							<rect class="btn" x="0" y="0" width="54px" height="54px" style="stroke:#fff; fill:#fff; fill-opacity:0;stroke-opacity:0;"/>
-					  	</g>
-					</svg>
+			<div class="projectColumn">
+				<div class="col-md-4 projectBlock">
+					<div>
+						<h4>碩士論文</h4>
+						<h4>使用MATLAB針對氫質子磁振頻譜與LCModel之整合性介面系統研發</h4>
+						<h4>Development of integrated graphic user interface based on MATLAB for proton MR spectroscopy analysis with LCModel</h4>
+						<h4>柯正雯 教授（中山大學）</h4>
+						MATLAB、Linux C、Java
+					</div>
+					<div class="projectContent">
+						內容簡介：LCModel為核磁共振頻譜十分具有公信力的分析軟體，但是價錢十分昂貴且綁定硬體，這兩個特點使的我們需要使用時只能到特定的電腦上使用，這也促成我研究這個主題的動機。目的就是使用MATLAB來設計一套能夠與LCModel溝通的系統並且加上了其他方便分析的功能。MATLAB在分析與計算上能夠提供很多幫助，又兼具跨平台的優點，所以選擇使用MATLAB開發。溝通方式為SSH及FTP，LCModel為Linux的程式。系統結構採用MrStruct的理念設計，使用物件導向的方式設計整個系統。
+						<div id="carousel-paper" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-paper" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-paper" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/paper-1.bmp" alt="...">
+								</div>
+								<div class="item">
+									<img src="images/paper-2.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-paper" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-paper" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
 				</div>
-				<br>
-				<div style="font-size: 18px; padding: 25px;">
-					<p style="font-size: 20px;">居易工作內容(3/3)</p>
-					主要工作：	Switch<br>
-					使用工具：	C、C++、HTML、JavaScript、JQuery、AJAX<br>
-					資料結構：	NVRAM<br>
-					作業系統：	uClinux<br>
-					內容簡介：	    與廠商購買turnkey用以開發公司第一台switch。
-					　　底層主要使用的程式語言是C，主要在Linux上開發多隻程式或是修改，使用CGI與網頁溝通，網頁再用ajax post回內部的http server轉回CGI程式接收，再交由不同隻程式來處理內容。我主要負責前後端的設計與維護。
-					　　網頁延用前述router設計模式，全部RWD，主要使用HTML及使用bootstrap達到responsive效果，內容部分則使用HTML5、D3、Chart完成想要的視覺效果。<br>
+				<div class="col-md-4 projectBlock">
+					<div>
+						<h4>大學專題研究</h4>
+						<h3>智慧型就診隨身提醒設備</h3>
+						<h4>馬詠程 教授（長庚大學）</h4>
+						C、HTML、PHP、Unix
+					</div>
+					<div class="projectContent">
+						合作組員：林曉楓、蔡宗佑、曾恕勃<br>
+						內容簡介：為了加強病患在醫院等待時的照護，並讓病患能夠活用等待時間，我們設計這套系統。當病患掛號時領取我們的發送器，在我們佈下接收器的環境中活動時，隨時回傳位置資訊，若病患遇到緊急狀況也可以透過發送器向院方求救，護士可以透過網頁觀察病患所在位置，位置資訊將存進分散式資料庫，而未來可以對其加以利用。<br>
+						伺服器端(Linux)：因為接收器的數量多，我們使用分散式資料庫方式設計，不同的接收器透過我們的Hash table儲存進入不同的多個資料庫。儲存方式為Link list，藉以加快資訊儲存速度。傳輸方式為TCP，保障傳輸可靠性。使用者介面為網頁，方便使用者直接對病患資訊做更動。<br>
+						發送器端：設計多種不同省電的睡眠方式。根據病人不同的狀態，使用不同的省電方式，藉以達到最高的省電效益。<br>
+						學習歷程：完成這項專題讓我學會如何在多種程式語言及多種平台間溝通，以及實做了上課時學到的Hash和Link list的Database。不過最重要的還是學會了與組員間的溝通，讓計畫能夠順利的實現。<br>
+						<!-- <table style="table-layout: auto;border-collapse: collapse;width: 100%;">
+						<tr><td style="white-space: nowrap;">合作組員：</td><td>林曉楓、蔡宗佑、曾恕勃</td></tr>
+						<tr><td  style="white-space: nowrap;">內容簡介：</td><td>為了加強病患在醫院等待時的照護，並讓病患能夠活用等待時間，我們設計這套系統。當病患掛號時領取我們的發送器，在我們佈下接收器的環境中活動時，隨時回傳位置資訊，若病患遇到緊急狀況也可以透過發送器向院方求救，護士可以透過網頁觀察病患所在位置，位置資訊將存進分散式資料庫，而未來可以對其加以利用。<br>
+						伺服器端(Linux)：因為接收器的數量多，我們使用分散式資料庫方式設計，不同的接收器透過我們的Hash table儲存進入不同的多個資料庫。儲存方式為Link list，藉以加快資訊儲存速度。傳輸方式為TCP，保障傳輸可靠性。使用者介面為網頁，方便使用者直接對病患資訊做更動。<br>
+						發送器端：設計多種不同省電的睡眠方式。根據病人不同的狀態，使用不同的省電方式，藉以達到最高的省電效益。<br>
+						學習歷程：完成這項專題讓我學會如何在多種程式語言及多種平台間溝通，以及實做了上課時學到的Hash和Link list的Database。不過最重要的還是學會了與組員間的溝通，讓計畫能夠順利的實現。</td></tr>						
+						</table> -->
+						<div id="carousel-collage" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-collage" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-collage" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/collage-1.png" alt="...">
+								</div>
+								<div class="item">
+									<img src="images/collage-2.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-collage" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-collage" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
 				</div>
-			</div> -->
+			</div>
+			<div class="projectColumn">
+				<div class="col-md-4 projectBlock">
+					<div>
+						<h4>實習成果（１／２）</h4>
+						<h3>PowerRMS</h3>
+						C#、ASP.NET、MS SQL
+					</div>
+					<div class="projectContent">
+						內容簡介：Power RMS為監視與控制終端設備的系統軟體，包含了RMS-Client、RMS-Server、RMS-Management Tool三部分。<br>
+						Client安裝於終端設備上，其主要功能有兩部分：其一是監控終端設備執行時的設備狀態，並且將狀態資訊記錄為log，並通過Web Service Interface上傳至Server。其二是直接接受Server Management Tool通過網路命令，執行開關機等。<br>
+						Server安裝於伺服器(Windows XP + IIS)上，其主要功能是接收Client上傳的Log資訊，並保存於系統資料庫中。<br>
+						Server Management Tool安裝於伺服器主機或者PC(需開啟SQL TCP/IP Connection)上，其主要功能是為管理人員提供圖形化的操作介面進行管理。
+						<div id="carousel-practice1" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-practice1" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/practice1-1.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-practice1" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-practice1" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 projectBlock">
+					<div>
+						<h4>實習成果（２／２）</h4>
+						<h3>ADV_RTCALARM</h3>
+						Visual Studio C
+					</div>
+					<div class="projectContent">
+						撰寫一個API及修改一支Service，透過寫進registry的方式讓API及Service之間溝通，使的使用者可以操控電腦裡面的RTC晶片(Real Time Clock)。
+						<div id="carousel-practice2" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-practice2" data-slide-to="0" class="active"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/practice2-1.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-practice2" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-practice2" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projectColumn">
+				<div class="col-md-4 projectBlock">
+					<div>
+						<h4>計算機網路期末專題</h4>
+						<h4>線上釣魚對戰系統</h4>
+						C#
+					</div>
+					<div class="projectContent">
+						功能說明：紙牌釣魚遊戲的網路版，主要分為Client端與Server端，Client端可透過輸入Server端的IP位置連線，連線後即可開始遊戲。<br>
+						每局開始時，雙方輪流翻開兩張牌，同點數即可得分繼續翻牌，不同則蓋回翻開的牌換對方動作，當牌全翻完則結束遊戲。計分方式：以一對來計分，共26對，結束一局遊戲分數不重計。遊戲中可透過對話視窗對話聊天。
+						<div id="carousel-network" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-network" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-network" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/network-1.png" alt="...">
+								</div>
+								<div class="item">
+									<img src="images/network-2.png" alt="...">
+								</div>
+							</div>
+							<a class="left carousel-control disableSmoothScroll" href="#carousel-network" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+						  	</a>
+							<a class="right carousel-control disableSmoothScroll" href="#carousel-network" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<!-- <footer>I'm footer.</footer> -->
@@ -254,27 +472,20 @@
 		$("#experienceSide").height($("#experience").height());
 		$("#skillSide").height($("#skill").height());
 		$("#groupSide").height($("#group").height());
-		$()
 	}
-	$(".projectBlock").click(function(){
-		// console.log($(this).children(".projectContent"));
-		if($(this).hasClass("col-md-3")){
-			$(this).addClass("col-md-12");
-			$(this).removeClass("col-md-3");
-			$(this).children(".projectContent").show();
+	$(".projectBlock").click(function(event){
+		if(event.target.tagName != 'LI' && event.target.tagName != 'SPAN' && event.target.tagName != 'A'){
+			if($(this).hasClass("col-md-4")){
+				$(this).addClass("col-md-12");
+				$(this).removeClass("col-md-4");
+				$(this).children(".projectContent").show();
+			}
+			else{
+				$(this).removeClass("col-md-12");
+				$(this).addClass("col-md-4");
+				$(this).children(".projectContent").hide();
+			}
 		}
-		else{
-			$(this).removeClass("col-md-12");
-			$(this).addClass("col-md-3");
-			$(this).children(".projectContent").hide();
-		}
-
-	});
-	function openDetail(tab){
-		$("#" + tab).slideDown();
-	}
-	$("rect").click(function(){
-		$(this).parent().parent().parent().parent().slideUp();
 	});
 	init();
 </script>
