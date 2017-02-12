@@ -5880,7 +5880,8 @@ body, html {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease; }
+    -webkit-transition: all 0.5s ease;
+    cursor: pointer; }
     #collections .projectBlock div {
       background: rgba(0, 0, 0, 0.8);
       color: white;

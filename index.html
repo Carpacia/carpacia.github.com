@@ -6,22 +6,45 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Carpacia Resume</title>
 	<link rel="stylesheet" href="dist/css/w3.css">
+	<link rel="stylesheet" href="dist/css/component.css">
 	<link rel="stylesheet" href="dist/css/main.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<style>
-		
-
+	<style type="text/css">
 	</style>
 </head>
 <body>
 <div id="wrapper">	
 	<header id="top">
-		<nav class="navbar navbar-default navbar-fixed-top">
+	<nav id="dl-menu" class="dl-menuwrapper navbar-fixed-top"	>
+		<button class="dl-trigger">Open Menu</button>
+		<ul class="dl-menu">
+			<li>
+				<a href="#top">Home</a>
+			</li>
+			<li>
+				<a href="#basicInfo">關於我</a>
+			</li>
+			<li>			
+				<a href="#middle_bar">居易工作心得</a>
+			</li>
+			<li>
+				<a href="#">專案經歷</a>
+				<ul class="dl-submenu">
+					<li><a href="#collections">All</a></li>
+					<li><a href="#project_dray">居易工作內容</a></li>
+					<li><a href="#project_paper">論文及專題</a></li>
+					<li><a href="#project_practice">研華實習內容</a></li>
+					<li><a href="#project_collage">大學作業</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+<!-- /dl-menuwrapper -->
+		<!-- <nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
@@ -32,7 +55,6 @@
 		      <a class="navbar-brand" href="#top">Resume</a>
 		    </div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li><a href="#basicInfo">About Me</a></li>
@@ -65,7 +87,7 @@
 		      </ul>
 		    </div>
 		  </div>
-		</nav>
+		</nav> -->
 		<div class="w3-display-container bgimg w3-text-white" style="box-shadow: 0px -24px 16px 0 rgba(0,0,0,0.22) inset,0 -25px 55px 0 rgba(0,0,0,0.21) inset;">
 			<div class="w3-display-middle">
 				<h1 id="hey" class="w3-text-shadow" style="font-size: 80px;">Hey</h1>
@@ -123,6 +145,7 @@
 							長庚大學資訊工程系<br> <h6>2008/09~2012/06</h6><br>
 							中山大學資訊工程所<br> <h6>2012/09~2014/06</h6><br>
 							<br>
+							研華科技實習工程師<br> <h6>2011/07~2016/08</h6><br>
 							居易科技研發工程師<br> <h6>2015/09~2016/11</h6><br>
 							<br>
 						</div>
@@ -169,10 +192,10 @@
 		<div class="clearfix"></div>
 		<section id="middle_bar" class="w3-display-container col-md-12 w3-card-16" style="padding-bottom: 5%;">
 			<div class="col-md-2"></div>
-			<div class="w3-text-white w3-border w3-border-white col-md-8" width="100%" style="padding: 15px;">
+			<div class="w3-text-white w3-border w3-border-white col-md-8" width="100%" style="padding: 15px 20px;">
 				<h1 id="hey" class="w3-center" style="font-size: 36px;">居易工作心得</h1>
-			    <hr class="w3-border-white" style="margin:auto;width:80%">
-			    <div class="w3-left-align" style="font-size: 18px;">
+			    <hr class="w3-border-white" style="margin: auto; margin-top: 20px; margin-bottom: 20px; width:80%;">
+			    <div class="w3-left-align" style="font-size: 18px; line-height: 36px;">
 			    　　在居易待了一年多的時間，最後因為個人生涯規劃而離開了公司，雖然待的時間不長，但是第一份工作的經驗讓我學到了許多，不單是工作技能上，待人處事上也是，在學校只要想著如果把事情完成就好，而工作之後了解到，程式的效率及環境的限制也是很重要的部分，再加上與PM、PQC或客戶溝通等，都讓我學到很多。<br>
 				　　工作主要是嵌入式系統開發，總共接觸了三個開發的專案，分別為：GPON Router、AP Management、PoE Switch，大部分是在各種平台上開發所需要的process；因為是新部門的關係，而且人數很少，所以我們從底層到前端都需要自己做，每個人各自負責不同的功能，從driver的銜接到網頁設計或是CLI的格式，都要自己做，也因此學到了各種技術。<br>
 				　　到了第三個專案，我負責建置整個網頁的架構，主要是沿用前個專案的架構搬到Switch，再根據Switch的需求及硬體限制做更改。
@@ -184,7 +207,7 @@
 		<!-- <section id="middle_pic"></section> -->
 		<section id="collections">
 			<h1 class="w3-center"><span>專案經驗</span></h1>
-			<div class="projectColumn">
+			<div id="project_dray" class="projectColumn">
 				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>居易工作內容(1/3)</h4>
@@ -222,9 +245,10 @@
 						C、C++、HTML、JavaScript、JQuery、AJAX
 					</div>
 					<div class="projectContent">
-						資料結構：	JSON、UCI<br>
-						作業系統：	OpenWrt Linux<br>
-						內容簡介：	    在公司的router上增加管理AP的工具，利用TR-069作為兩者溝通的協定，提供監控、應用、調整及規劃等功能。<br>
+						資料結構：JSON、UCI<br>
+						作業系統：OpenWrt Linux<br>
+						內容簡介：<br>
+						　　在公司的router上增加管理AP的工具，利用TR-069作為兩者溝通的協定，提供監控、應用、調整及規劃等功能。<br>
 						　　底層主要使用的程式語言是C再加上部分的C++，使用CGI與網頁溝通，網頁再用AJAX post回內部的http server轉回CGI程式接收，再交由程式來處理內容，進而對AP傳送指令或是接收資訊。<br>
 						　　網頁全部RWD，主要使用HTML及使用bootstrap達到responsive效果，內容部分則使用HTML5、D3、jQuery UI、Chart完成想要的視覺效果。<br>
 						<div id="carousel-dray2" class="carousel slide" data-ride="carousel">
@@ -284,7 +308,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="projectColumn">
+			<div id="project_paper" class="projectColumn">
 				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>碩士論文</h4>
@@ -364,7 +388,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="projectColumn">
+			<div id="project_practice" class="projectColumn">
 				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>實習成果（１／２）</h4>
@@ -425,7 +449,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="projectColumn">
+			<div id="project_collage" class="projectColumn">
 				<div class="col-md-4 projectBlock">
 					<div>
 						<h4>計算機網路期末專題</h4>
@@ -462,16 +486,20 @@
 			</div>
 		</section>
 	</main>
-	<!-- <footer>I'm footer.</footer> -->
+	<footer>
+
+	</footer>
 </div>	
 </body>
 </html>
+<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
 <script type="text/javascript">
 	function init(){
 		$("#personalSide").height($("#personal").height() + 20);
 		$("#experienceSide").height($("#experience").height());
 		$("#skillSide").height($("#skill").height());
 		$("#groupSide").height($("#group").height());
+		// console.log($(".carousel").carousel('pause'));
 	}
 	$(".projectBlock").click(function(event){
 		if(event.target.tagName != 'LI' && event.target.tagName != 'SPAN' && event.target.tagName != 'A'){
@@ -479,13 +507,19 @@
 				$(this).addClass("col-md-12");
 				$(this).removeClass("col-md-4");
 				$(this).children(".projectContent").show();
+				$(this).children().children(".carousel").carousel('cycle');
 			}
 			else{
 				$(this).removeClass("col-md-12");
 				$(this).addClass("col-md-4");
 				$(this).children(".projectContent").hide();
+				$(this).children().children(".carousel").carousel('pause');
 			}
 		}
 	});
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+				});
+			});
 	init();
 </script>
