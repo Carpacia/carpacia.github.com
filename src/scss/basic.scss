@@ -17,6 +17,22 @@ body, html {height: 100%}
     background-size: cover;
 }
 
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+@keyframes typing {
+  from { width: 0 }
+}
+
+#hey {
+  width: 7em;
+  border-right: .05em solid;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(7),
+    caret 1s steps(1) infinite;
+}
+
 #middle_bar {
 	margin-top: 5%;
 	background: #000000;
