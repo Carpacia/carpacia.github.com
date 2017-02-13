@@ -5844,8 +5844,20 @@ body, html {
   background: linear-gradient(to top left, #000000, #626262);
   /* Standard syntax */
   width: 100%;
-  min-height: 200;
-  transform-origin: right bottom; }
+  min-height: 200px;
+  padding-bottom: 5%; }
+  #middle_bar div {
+    padding: 15px 20px; }
+    #middle_bar div h1 {
+      font-size: 36px; }
+    #middle_bar div hr {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 80%; }
+    #middle_bar div div {
+      font-size: 18px;
+      line-height: 36px; }
 
 .collections_background {
   margin-top: 5%;
@@ -5920,29 +5932,32 @@ body, html {
   height: auto;
   min-height: 50vh; }
 
+#separate {
+  background: white;
+  height: 1px; }
+
 footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 2% 20% 2% 20%;
+  padding: 10% 20% 10% 20%;
   min-height: 200px;
   background-color: black;
   font-size: 16px;
   color: #9a9a9a;
-  text-align: right; }
+  text-align: left; }
   @media (max-width: 1600px) and (min-width: 768px) {
     footer {
-      padding: 2% 10% 2% 10%;
+      padding: 70px 10%;
       min-height: 0; } }
   @media (max-width: 991px) and (min-width: 480px) {
     footer {
-      padding: 2% 5%;
+      padding: 70px 5%;
       min-height: 0; } }
   @media (max-width: 767px) {
     footer {
-      padding: 2% 5%;
-      min-height: 0;
-      font-size: 12px; } }
+      padding: 70px 5%;
+      min-height: 0; } }
 
 section {
   padding-top: 5%; }

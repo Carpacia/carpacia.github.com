@@ -19,17 +19,12 @@ $( document ).ready( function(){
 	$("#groupSide").height($("#group").height());
 });
 
-
-function init(){
-	// console.log($(".carousel").carousel('pause'));
-}
 $(".projectBlock").click(function(event){
 	if(event.target.tagName != 'LI' && event.target.tagName != 'SPAN' && event.target.tagName != 'A'){
 		if($(this).hasClass("col-md-4")){
 
 			$(this).addClass("col-md-12");
 			$(this).removeClass("col-md-4");
-			// $(this).children(".projectContent").css("padding-top", "0px");
 			$(this).children(".projectTitle").css("padding-bottom", "0px");
 			$(this).children(".projectContent").show();
 			$(this).children().children(".carousel").carousel('cycle');
@@ -37,7 +32,6 @@ $(".projectBlock").click(function(event){
 		else{
 			$(this).removeClass("col-md-12");
 			$(this).addClass("col-md-4");
-			// $(this).children(".projectContent").css("padding-top", "5%");
 			$(this).children(".projectTitle").css("padding-bottom", "5%");
 			$(this).children(".projectContent").hide();
 			$(this).children().children(".carousel").carousel('pause');
@@ -48,4 +42,3 @@ $(function() {
 	$( '#dl-menu' ).dlmenu({
 	});
 });
-	// init();
