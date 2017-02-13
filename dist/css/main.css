@@ -5942,6 +5942,21 @@ body, html {
 #top {
   height: 100vh;
   background-color: #CCC; }
+  #top #home_page {
+    box-shadow: 0px -24px 16px 0 rgba(0, 0, 0, 0.22) inset, 0 -25px 55px 0 rgba(0, 0, 0, 0.21) inset; }
+    #top #home_page h1 {
+      font-size: 72px; }
+      @media (max-width: 767px) {
+        #top #home_page h1 {
+          font-size: 36px; } }
+    #top #home_page hr {
+      margin: auto;
+      width: 40%; }
+    #top #home_page p {
+      font-size: 24px; }
+      @media (max-width: 767px) {
+        #top #home_page p {
+          font-size: 16px; } }
 
 #content {
   height: auto;
