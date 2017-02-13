@@ -5882,13 +5882,20 @@ body, html {
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     cursor: pointer; }
-    #collections .projectBlock div {
+    #collections .projectBlock .projectTitle {
       background: rgba(0, 0, 0, 0.8);
       color: white;
-      padding: 5px; }
+      padding: 5%; }
     #collections .projectBlock .projectContent {
+      background: rgba(0, 0, 0, 0.8);
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 5%;
+      color: white;
       font-size: 16px;
       display: none; }
+      #collections .projectBlock .projectContent .carousel {
+        padding-top: 20px; }
     #collections .projectBlock img {
       margin: auto; }
   #collections .projectDetail {
@@ -5918,9 +5925,11 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 2% 20% 2% 20%;
+  min-height: 200px;
   background-color: black;
-  text-align: left;
-  color: #9a9a9a; }
+  font-size: 16px;
+  color: #9a9a9a;
+  text-align: right; }
   @media (max-width: 1600px) and (min-width: 768px) {
     footer {
       padding: 2% 10% 2% 10%;
