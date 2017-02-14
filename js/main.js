@@ -13,7 +13,7 @@ $( document ).ready( function(){
 	    }
 	  });
 	});
-	$("#personalSide").height($("#personal").height() + 20);
+	$("#personalSide").height($("#personal").height());
 	$("#experienceSide").height($("#experience").height());
 	$("#skillSide").height($("#skill").height());
 	$("#groupSide").height($("#group").height());
